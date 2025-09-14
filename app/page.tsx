@@ -22,7 +22,15 @@ export default function Home() {
       tags: ["Tableau", "Analytics", "BI"],
     },
   ];
-
+// inside Home component, add this new array
+const certifications = [
+  {
+    name: "MySQL Installation and Configuration",
+    issuer: "LinkedIn Learning",
+    year: "2025",
+    link: "https://www.linkedin.com/learning/certificates/9000ba864eb08c416ae5996bddfa1a0ee76c232d0b4cac2a785d751fd829bf68?u=2189292"
+  }
+];
   const skills = [
     "Python","SQL","Pandas","Flask","Spark","Tableau","Power BI","Machine Learning"
   ];
