@@ -132,7 +132,7 @@ const certifications = [
       <section id="contact" className="border-t bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Contact</h2>
-          <p className="mt-4 text-gray-700">Email: <a className="underline" href="mailto:thimmanacharanajaykumar24@gmail.com">thimmanacharanajaykumar24@gmail.com</a></p>
+          <p className="mt-4 text-gray-700">Email: <a className="underline" href="mailto:thimmanacharanajaykumar24@gmail.com">suryasrisundara549@gmail.com</a></p>
           <p className="text-gray-700">LinkedIn: <a className="underline" href="https://linkedin.com/in/surya-sri-sundara-4ab45b331">linkedin.com/in/surya-sri-sundara-4ab45b331</a></p>
         </div>
       </section>
