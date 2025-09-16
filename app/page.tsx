@@ -22,177 +22,65 @@ export default function Home() {
       tags: ["Tableau", "Analytics", "BI"],
     },
   ];
-// inside Home component, add this new array
-const certifications = [
-  {
-    name: "MySQL Installation and Configuration",
-    issuer: "LinkedIn Learning",
-    instructor: "Bill Weinman",
-    year: "2025",
-    month: "September",
-    skills: ["MySQL", "Database Administration", "Server Configuration"],
-    link: "https://www.linkedin.com/learning/certificates/9000ba864eb08c416ae5996bddfa1a0ee76c232d0b4cac2a785d751fd829bf68?u=2189292",
-    verified: true
-  },
-  {
-    name: "MySQL Essential Training",
-    issuer: "LinkedIn Learning", 
-    instructor: "Bill Weinman",
-    year: "2025",
-    month: "September",
-    skills: ["MySQL", "SQL Queries", "Database Design", "Data Management"],
-    link: "https://www.linkedin.com/learning/mysql-essential-training-23484714/thank-you?u=2189292",
-    verified: true
-  },
-  {
-    name: "Introduction to Transact-SQL",
-    issuer: "Microsoft Learn",
-    year: "2025",
-    month: "September", 
-    skills: ["T-SQL", "SQL Server", "Database Queries", "Data Analysis"],
-    link: "https://learn.microsoft.com/en-us/training/modules/introduction-to-transact-sql/",
-    badgeEarned: true,
-    verified: true
-  },
-  {
-    name: "Sort and Filter Results in T-SQL", 
-    issuer: "Microsoft Learn",
-    year: "2025",
-    month: "September",
-    skills: ["T-SQL", "Data Filtering", "Query Optimization", "SQL Server"],
-    link: "https://learn.microsoft.com/en-us/training/modules/sort-filter-queries/",
-    badgeEarned: true,
-    verified: true,
-    status: "In Progress" // Update to "Completed" when finished
-  }
-];
 
-// Optional: Function to display certifications on your website
-function displayCertifications() {
-  const certificationsContainer = document.getElementById('certifications-container');
-  
-  certifications.forEach(cert => {
-    const certCard = document.createElement('div');
-    certCard.className = 'certification-card';
-    
-    certCard.innerHTML = `
-      <div class="cert-header">
-        <h3 class="cert-name">${cert.name}</h3>
-        <span class="cert-issuer">${cert.issuer}</span>
-      </div>
-      
-      <div class="cert-details">
-        ${cert.instructor ? `<p class="instructor">Instructor: ${cert.instructor}</p>` : ''}
-        <p class="cert-date">${cert.month} ${cert.year}</p>
-        ${cert.badgeEarned ? '<span class="badge">🏆 Badge Earned</span>' : ''}
-        ${cert.verified ? '<span class="verified">✅ Verified</span>' : ''}
-        ${cert.status ? `<span class="status">${cert.status}</span>` : ''}
-      </div>
-      
-      <div class="cert-skills">
-        <h4>Skills:</h4>
-        <div class="skills-tags">
-          ${cert.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
-        </div>
-      </div>
-      
-      ${cert.link ? `<a href="${cert.link}" target="_blank" class="cert-link">View Certificate</a>` : ''}
-    `;
-    
-    certificationsContainer.appendChild(certCard);
-  });
-}
-
-// CSS to go with the HTML (optional - add to your stylesheet)
-const certificationStyles = `
-.certification-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 15px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease;
-}
-
-.certification-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-.cert-header {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 15px;
-}
-
-.cert-name {
-  color: #2c3e50;
-  margin: 0 0 5px 0;
-  font-size: 1.2rem;
-}
-
-.cert-issuer {
-  color: #3498db;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.cert-details {
-  margin: 15px 0;
-}
-
-.cert-details p {
-  margin: 5px 0;
-  color: #666;
-}
-
-.badge, .verified, .status {
-  background: #27ae60;
-  color: white;
-  padding: 3px 8px;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  margin: 0 5px;
-}
-
-.status {
-  background: #f39c12;
-}
-
-.skills-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.skill-tag {
-  background: #ecf0f1;
-  color: #2c3e50;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-}
-
-.cert-link {
-  display: inline-block;
-  background: #3498db;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 15px;
-  transition: background 0.2s ease;
-}
-
-.cert-link:hover {
-  background: #2980b9;
-}
-`;
+  const certifications = [
+    {
+      name: "MySQL Installation and Configuration",
+      issuer: "LinkedIn Learning",
+      instructor: "Bill Weinman",
+      year: "2025",
+      month: "September",
+      skills: ["MySQL", "Database Administration", "Server Configuration"],
+      link: "https://www.linkedin.com/learning/certificates/9000ba864eb08c416ae5996bddfa1a0ee76c232d0b4cac2a785d751fd829bf68?u=2189292",
+      verified: true,
+      badgeEarned: false,
+      status: "Completed",
+    },
+    {
+      name: "MySQL Essential Training",
+      issuer: "LinkedIn Learning",
+      instructor: "Bill Weinman",
+      year: "2025",
+      month: "September",
+      skills: ["MySQL", "SQL Queries", "Database Design", "Data Management"],
+      link: "https://www.linkedin.com/learning/mysql-essential-training-23484714/thank-you?u=2189292",
+      verified: true,
+      badgeEarned: false,
+      status: "Completed",
+    },
+    {
+      name: "Introduction to Transact-SQL",
+      issuer: "Microsoft Learn",
+      year: "2025",
+      month: "September",
+      skills: ["T-SQL", "SQL Server", "Database Queries", "Data Analysis"],
+      link: "https://learn.microsoft.com/en-us/training/modules/introduction-to-transact-sql/",
+      verified: true,
+      badgeEarned: true,
+      status: "Completed",
+    },
+    {
+      name: "Sort and Filter Results in T-SQL",
+      issuer: "Microsoft Learn",
+      year: "2025",
+      month: "September",
+      skills: ["T-SQL", "Data Filtering", "Query Optimization", "SQL Server"],
+      link: "https://learn.microsoft.com/en-us/training/modules/sort-filter-queries/",
+      verified: true,
+      badgeEarned: true,
+      status: "In Progress",
+    },
+  ];
 
   const skills = [
-    "Python","SQL","Pandas","Flask","Spark","Tableau","Power BI","Machine Learning"
+    "Python",
+    "SQL",
+    "Pandas",
+    "Flask",
+    "Spark",
+    "Tableau",
+    "Power BI",
+    "Machine Learning",
   ];
 
   return (
@@ -200,12 +88,25 @@ const certificationStyles = `
       {/* Header */}
       <header className="sticky top-0 z-10 backdrop-blur bg-white/70 border-b">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#home" className="font-semibold text-lg">Surya Sri Sundara</a>
+          <a href="#home" className="font-semibold text-lg">
+            Surya Sri Sundara
+          </a>
           <nav className="hidden md:flex gap-6 text-sm">
-            <a href="#projects" className="hover:opacity-70">Projects</a>
-            <a href="#skills" className="hover:opacity-70">Skills</a>
-            <a href="#about" className="hover:opacity-70">About</a>
-            <a href="#contact" className="hover:opacity-70">Contact</a>
+            <a href="#projects" className="hover:opacity-70">
+              Projects
+            </a>
+            <a href="#skills" className="hover:opacity-70">
+              Skills
+            </a>
+            <a href="#certifications" className="hover:opacity-70">
+              Certifications
+            </a>
+            <a href="#about" className="hover:opacity-70">
+              About
+            </a>
+            <a href="#contact" className="hover:opacity-70">
+              Contact
+            </a>
           </nav>
         </div>
       </header>
@@ -215,9 +116,9 @@ const certificationStyles = `
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-              Data & BI Analyst
+              Data &amp; BI Analyst
               <span className="block text-gray-600 text-xl md:text-2xl mt-3">
-                MSc Big Data Management & Analytics — Dublin
+                MSc Big Data Management &amp; Analytics — Dublin
               </span>
             </h1>
             <p className="mt-6 text-gray-700 leading-relaxed">
@@ -225,9 +126,26 @@ const certificationStyles = `
               time-series forecasts, and interactive BI dashboards that help teams make smarter decisions.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#projects" className="px-5 py-2.5 rounded-2xl shadow bg-black text-white text-sm">View Projects</a>
-              <a href="/Surya_Sri_Sundara_CV.pdf" className="px-5 py-2.5 rounded-2xl border text-sm">Download CV</a>
-              <a href="https://linkedin.com/in/surya-sri-sundara-4ab45b331" className="px-5 py-2.5 rounded-2xl border text-sm">LinkedIn</a>
+              <a
+                href="#projects"
+                className="px-5 py-2.5 rounded-2xl shadow bg-black text-white text-sm"
+              >
+                View Projects
+              </a>
+              <a
+                href="/Surya_Sri_Sundara_CV.pdf"
+                className="px-5 py-2.5 rounded-2xl border text-sm"
+              >
+                Download CV
+              </a>
+              <a
+                href="https://linkedin.com/in/surya-sri-sundara-4ab45b331"
+                className="px-5 py-2.5 rounded-2xl border text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
 
@@ -236,7 +154,7 @@ const certificationStyles = `
               <span className="text-sm text-gray-500">Add a hero image or chart here</span>
             </div>
             <p className="text-xs text-gray-500 mt-3">
-              Replace with a clean analytics screenshot (Tableau/Matplotlib).
+              Tip: replace this with a clean analytics screenshot (Tableau/Matplotlib) for instant credibility.
             </p>
           </div>
         </div>
@@ -248,13 +166,21 @@ const certificationStyles = `
           <h2 className="text-2xl md:text-3xl font-semibold">Selected Projects</h2>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
-              <a key={p.title} href={p.link} target="_blank" className="block group">
+              <a
+                key={p.title}
+                href={p.link}
+                className="block group"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="rounded-2xl border bg-white shadow-sm p-5 h-full">
                   <h3 className="font-semibold group-hover:underline">{p.title}</h3>
                   <p className="text-sm text-gray-600 mt-2">{p.description}</p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {p.tags.map((t) => (
-                      <span key={t} className="text-[11px] px-2 py-1 rounded-full border">{t}</span>
+                      <span key={t} className="text-[11px] px-2 py-1 rounded-full border">
+                        {t}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -270,7 +196,76 @@ const certificationStyles = `
           <h2 className="text-2xl md:text-3xl font-semibold">Skills</h2>
           <ul className="mt-6 flex flex-wrap gap-3">
             {skills.map((s) => (
-              <li key={s} className="px-3 py-1.5 rounded-full border bg-white text-sm shadow-sm">{s}</li>
+              <li
+                key={s}
+                className="px-3 py-1.5 rounded-full border bg-white text-sm shadow-sm"
+              >
+                {s}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* Certifications */}
+      <section id="certifications" className="border-t bg-white">
+        <div className="max-w-6xl mx-auto px-6 py-16">
+          <h2 className="text-2xl md:text-3xl font-semibold">Certifications</h2>
+          <ul className="mt-6 grid gap-4 md:grid-cols-2">
+            {certifications.map((c) => (
+              <li key={c.name} className="rounded-2xl border bg-gray-50 p-5 shadow-sm">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="font-semibold">{c.name}</h3>
+                    <p className="text-sm text-gray-600">
+                      {c.issuer}
+                      {c.instructor ? ` • Instructor: ${c.instructor}` : ""}
+                    </p>
+                    <p className="text-xs text-gray-500">
+                      {c.month} {c.year}
+                    </p>
+                  </div>
+                  <div className="flex gap-2">
+                    {c.badgeEarned && (
+                      <span className="text-xs rounded-full px-2 py-1 bg-emerald-600 text-white">
+                        Badge
+                      </span>
+                    )}
+                    {c.verified && (
+                      <span className="text-xs rounded-full px-2 py-1 bg-blue-600 text-white">
+                        Verified
+                      </span>
+                    )}
+                    {c.status && (
+                      <span className="text-xs rounded-full px-2 py-1 bg-amber-500 text-white">
+                        {c.status}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                {c.skills?.length ? (
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {c.skills.map((skill) => (
+                      <span
+                        key={skill}
+                        className="text-[11px] px-2 py-1 rounded-full border bg-white"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+                {c.link && (
+                  <a
+                    href={c.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-4 underline text-sm"
+                  >
+                    View Certificate
+                  </a>
+                )}
+              </li>
             ))}
           </ul>
         </div>
@@ -292,8 +287,26 @@ const certificationStyles = `
       <section id="contact" className="border-t bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-2xl md:text-3xl font-semibold">Contact</h2>
-          <p className="mt-4 text-gray-700">Email: <a className="underline" href="mailto:thimmanacharanajaykumar24@gmail.com">suryasrisundara549@gmail.com</a></p>
-          <p className="text-gray-700">LinkedIn: <a className="underline" href="https://linkedin.com/in/surya-sri-sundara-4ab45b331">linkedin.com/in/surya-sri-sundara-4ab45b331</a></p>
+          <p className="mt-4 text-gray-700">
+            Email:{" "}
+            <a
+              className="underline"
+              href="mailto:suryasrisundara549@gmail.com"
+            >
+              suryasrisundara549@gmail.com
+            </a>
+          </p>
+          <p className="text-gray-700">
+            LinkedIn:{" "}
+            <a
+              className="underline"
+              href="https://linkedin.com/in/surya-sri-sundara-4ab45b331"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/surya-sri-sundara-4ab45b331
+            </a>
+          </p>
         </div>
       </section>
 
