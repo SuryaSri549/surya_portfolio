@@ -85,31 +85,32 @@ export default function Home() {
 
   return (
     <main>
-      {/* Header */}
-     <header className="sticky top-0 z-10 bg-white border-b shadow-sm">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <a href="#home" className="font-semibold text-lg">
-            Surya Sri Sundara
-          </a>
-          <nav className="hidden md:flex gap-6 text-sm">
-            <a href="#projects" className="hover:opacity-70">
-              Projects
-            </a>
-            <a href="#skills" className="hover:opacity-70">
-              Skills
-            </a>
-            <a href="#certifications" className="hover:opacity-70">
-              Certifications
-            </a>
-            <a href="#about" className="hover:opacity-70">
-              About
-            </a>
-            <a href="#contact" className="hover:opacity-70">
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
+{/* Header */}
+<header className="sticky top-0 z-10 bg-slate-900 border-b border-slate-800 shadow-md">
+  <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="#home" className="font-semibold text-lg text-white">
+      Surya Sri Sundara
+    </a>
+    <nav className="hidden md:flex gap-6 text-sm">
+      <a href="#projects" className="text-slate-200 hover:text-amber-400 transition">
+        Projects
+      </a>
+      <a href="#skills" className="text-slate-200 hover:text-amber-400 transition">
+        Skills
+      </a>
+      <a href="#certifications" className="text-slate-200 hover:text-amber-400 transition">
+        Certifications
+      </a>
+      <a href="#about" className="text-slate-200 hover:text-amber-400 transition">
+        About
+      </a>
+      <a href="#contact" className="text-slate-200 hover:text-amber-400 transition">
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
+
 
       {/* Hero */}
   <section id="home" className="max-w-6xl mx-auto px-6 py-16 md:py-24">
