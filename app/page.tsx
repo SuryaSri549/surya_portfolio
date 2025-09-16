@@ -191,8 +191,6 @@ const certificationStyles = `
 }
 `;
 
-// Export for use in your website
-export { certifications, displayCertifications, certificationStyles };
   const skills = [
     "Python","SQL","Pandas","Flask","Spark","Tableau","Power BI","Machine Learning"
   ];
