@@ -86,7 +86,7 @@ export default function Home() {
   return (
     <main>
       {/* Header */}
-      <header className="sticky top-0 z-10 backdrop-blur bg-white/70 border-b">
+      <header className="sticky top-0 z-10 bg-white border-b shadow-sm">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#home" className="font-semibold text-lg">
             Surya Sri Sundara
@@ -162,9 +162,9 @@ export default function Home() {
 
       {/* Projects */}
       <section id="projects" className="bg-white border-t">
-        <div className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-2xl md:text-3xl font-semibold">Selected Projects</h2>
-          <div className="grid md:grid-cols-3 gap-6 mt-8">
+  <div className="max-w-6xl mx-auto px-6 py-16">
+    <h2 className="text-3xl font-semibold text-slate-900">Selected Projects</h2>
+    <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
               <a
                 key={p.title}
