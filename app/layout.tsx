@@ -17,16 +17,10 @@ export const metadata: Metadata = {
   description: "Portfolio of Surya Sri Sundara — projects, skills, and contact",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
         {children}
       </body>
     </html>
