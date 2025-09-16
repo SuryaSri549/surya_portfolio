@@ -117,14 +117,18 @@ export default function Home() {
   <div className="grid md:grid-cols-2 gap-10 items-center">
     <div>
       <h1 className="text-3xl md:text-5xl font-bold leading-tight text-slate-900">
-        Data &amp; BI Analyst
-        <span className="block text-slate-600 text-xl md:text-2xl mt-3">
+      <span className="bg-gradient-to-r from-amber-400 to-pink-500 bg-clip-text text-transparent">
+          Data &amp; BI Analyst
+        </span>
+        <span className="block text-amber-300 text-xl md:text-2xl mt-4 font-medium">
           MSc Big Data Management &amp; Analytics — Dublin
         </span>
       </h1>
       <p className="mt-6 text-slate-700 leading-relaxed">
-        I turn raw data into clear, actionable insights. I build end-to-end analytics apps,
-        time-series forecasts, and interactive BI dashboards that help teams make smarter decisions.
+        I turn <span className="font-semibold text-white">raw data</span> into 
+        <span className="font-semibold text-amber-400"> actionable insights</span>.  
+        I build end-to-end analytics apps, time-series forecasts, and interactive BI dashboards 
+        that help teams make smarter decisions.
       </p>
       <div className="mt-8 flex flex-wrap gap-3">
         <a href="#projects" className="px-5 py-2.5 rounded-2xl shadow bg-slate-900 text-white text-sm">
