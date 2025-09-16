@@ -27,10 +27,172 @@ const certifications = [
   {
     name: "MySQL Installation and Configuration",
     issuer: "LinkedIn Learning",
+    instructor: "Bill Weinman",
     year: "2025",
-    link: "https://www.linkedin.com/learning/certificates/9000ba864eb08c416ae5996bddfa1a0ee76c232d0b4cac2a785d751fd829bf68?u=2189292"
+    month: "September",
+    skills: ["MySQL", "Database Administration", "Server Configuration"],
+    link: "https://www.linkedin.com/learning/certificates/9000ba864eb08c416ae5996bddfa1a0ee76c232d0b4cac2a785d751fd829bf68?u=2189292",
+    verified: true
+  },
+  {
+    name: "MySQL Essential Training",
+    issuer: "LinkedIn Learning", 
+    instructor: "Bill Weinman",
+    year: "2025",
+    month: "September",
+    skills: ["MySQL", "SQL Queries", "Database Design", "Data Management"],
+    link: "https://www.linkedin.com/learning/mysql-essential-training-23484714/thank-you?u=2189292",
+    verified: true
+  },
+  {
+    name: "Introduction to Transact-SQL",
+    issuer: "Microsoft Learn",
+    year: "2025",
+    month: "September", 
+    skills: ["T-SQL", "SQL Server", "Database Queries", "Data Analysis"],
+    link: "https://learn.microsoft.com/en-us/training/modules/introduction-to-transact-sql/",
+    badgeEarned: true,
+    verified: true
+  },
+  {
+    name: "Sort and Filter Results in T-SQL", 
+    issuer: "Microsoft Learn",
+    year: "2025",
+    month: "September",
+    skills: ["T-SQL", "Data Filtering", "Query Optimization", "SQL Server"],
+    link: "https://learn.microsoft.com/en-us/training/modules/sort-filter-queries/",
+    badgeEarned: true,
+    verified: true,
+    status: "In Progress" // Update to "Completed" when finished
   }
 ];
+
+// Optional: Function to display certifications on your website
+function displayCertifications() {
+  const certificationsContainer = document.getElementById('certifications-container');
+  
+  certifications.forEach(cert => {
+    const certCard = document.createElement('div');
+    certCard.className = 'certification-card';
+    
+    certCard.innerHTML = `
+      <div class="cert-header">
+        <h3 class="cert-name">${cert.name}</h3>
+        <span class="cert-issuer">${cert.issuer}</span>
+      </div>
+      
+      <div class="cert-details">
+        ${cert.instructor ? `<p class="instructor">Instructor: ${cert.instructor}</p>` : ''}
+        <p class="cert-date">${cert.month} ${cert.year}</p>
+        ${cert.badgeEarned ? '<span class="badge">🏆 Badge Earned</span>' : ''}
+        ${cert.verified ? '<span class="verified">✅ Verified</span>' : ''}
+        ${cert.status ? `<span class="status">${cert.status}</span>` : ''}
+      </div>
+      
+      <div class="cert-skills">
+        <h4>Skills:</h4>
+        <div class="skills-tags">
+          ${cert.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+        </div>
+      </div>
+      
+      ${cert.link ? `<a href="${cert.link}" target="_blank" class="cert-link">View Certificate</a>` : ''}
+    `;
+    
+    certificationsContainer.appendChild(certCard);
+  });
+}
+
+// CSS to go with the HTML (optional - add to your stylesheet)
+const certificationStyles = `
+.certification-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.cert-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.cert-name {
+  color: #2c3e50;
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.cert-issuer {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.cert-details {
+  margin: 15px 0;
+}
+
+.cert-details p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.badge, .verified, .status {
+  background: #27ae60;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin: 0 5px;
+}
+
+.status {
+  background: #f39c12;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  background: #ecf0f1;
+  color: #2c3e50;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.cert-link {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background 0.2s ease;
+}
+
+.cert-link:hover {
+  background: #2980b9;
+}
+`;
+
+// Export for use in your website
+export { certifications, displayCertifications, certificationStyles };
   const skills = [
     "Python","SQL","Pandas","Flask","Spark","Tableau","Power BI","Machine Learning"
   ];
