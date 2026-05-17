@@ -107,7 +107,7 @@ export default function Home() {
     },
     {
       category: "Currently Learning",
-      skills: ["QQI Level 5 Medical Terminology", "Jira", "Confluence"],
+      skills: ["Notion", "Jira", "Confluence"],
     },
   ];
 
@@ -164,7 +164,7 @@ export default function Home() {
                 View Projects
               </a>
               <a
-                href="/Surya_Sri_Sundara_CV.pdf"
+                href="/Surya_SriSundara_CV_Protfolio.pdf"
                 className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition"
               >
                 Download CV
