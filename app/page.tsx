@@ -229,8 +229,8 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="bg-white border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-slate-900">Selected Projects</h2>
-          <p className="text-slate-500 mt-2 text-sm">Real work. Real tools. Real outputs.</p>
+          <h2 className="text-3xl font-semibold text-slate-900">What I've Built</h2>
+          <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
               <a
