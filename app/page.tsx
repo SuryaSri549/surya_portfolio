@@ -8,14 +8,14 @@ export default function Home() {
       tags: ["Flask", "Python", "ARIMA", "Prophet", "K-Means", "SQLite", "Power BI"],
       live: true,
     },
-    {
-      title: "Business Analysis — Process Documentation",
-      description:
-        "Requirements gathering, workflow documentation and user guide creation for the Sales App. Produced stakeholder-focused outputs including process maps, data dictionaries, and training materials — mirroring real BA deliverables.",
-      link: "https://github.com/SuryaSri549/saleswebapp",
-      tags: ["Requirements Gathering", "Process Mapping", "Documentation", "BA"],
-      live: false,
-    },
+   {
+  title: "AI in Military — National Conference Paper",
+  description:
+    "Research paper examining India's AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
+  link: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
+  tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
+  live: false,
+},
     {
       title: "Power BI Sales Dashboard",
       description:
