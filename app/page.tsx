@@ -400,7 +400,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">Contact</h2>
           <p className="text-slate-500 mt-2 mb-6 text-sm">
-            Open to junior BA, Data Analyst, and BI Analyst roles .
+            Open to junior BA, Data Analyst, and BI Analyst roles - let&apos;s talk.
           </p>
           <div className="space-y-3">
             <p className="text-slate-700">
