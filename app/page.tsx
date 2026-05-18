@@ -331,8 +331,7 @@ export default function Home() {
             </p>
             <p>
               I&apos;m an active member of the{" "}
-              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>, currently
-              completing QQI Level 5 in Medical Terminology, and I&apos;m open to junior BA, Data
+              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>,  I&apos;m open to junior BA, Data
               Analyst, and Business Intelligence roles across any sector.
             </p>
             <p className="text-amber-400 font-medium">
