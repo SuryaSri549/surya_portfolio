@@ -16,7 +16,7 @@ export default function Home() {
       link: "/AI_Military_Suryasri_Sundara_AICTA2020.pdf",
       tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
       live: false,
-      certLink: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
+     certLink: "/Certificate of Paper Submission on Artificial Intelligence.png",
     },
     {
       title: "SuperStore Sales Analysis — Tableau",
