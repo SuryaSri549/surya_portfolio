@@ -258,17 +258,6 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
-                  {p.certLink && (
-                    
-                      href={p.certLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="inline-block mt-3 text-[11px] px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-700 hover:bg-amber-100 transition"
-                    >
-                      View Certificate →
-                    </a>
-                  )}
                 </div>
               </a>
             ))}
