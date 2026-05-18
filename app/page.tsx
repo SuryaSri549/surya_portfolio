@@ -229,7 +229,7 @@ export default function Home() {
           <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
-              
+
                 key={p.title}
                 href={p.link}
                 className="block group"
@@ -259,8 +259,8 @@ export default function Home() {
                     ))}
                   </div>
                   {p.certLink && (
-                    
-                      href={p.certLink}
+
+                  herf={p.certLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
