@@ -7,24 +7,26 @@ export default function Home() {
       link: "https://saleswebapp-1hki.onrender.com/",
       tags: ["Flask", "Python", "ARIMA", "Prophet", "K-Means", "SQLite", "Power BI"],
       live: true,
+      certLink: null,
     },
-   {
-  title: "AI in Military — National Conference Paper",
-  description:
-    "Research paper examining India\u2019s AI capabilities in defence — autonomous systems, robotics and military strategy. Presented at AICTA 2020, DST-CURIE-AI sponsored national conference.",
-  link: "/AI_Military_Suryasri_Sundara_AICTA2020.pdf",
-  tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
-  live: false,
-  certLink: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
-},
-{
-  title: "SuperStore Sales Analysis — Tableau",
-  description:
-    "5 interactive Tableau dashboards analysing retail sales data for regional managers. Covers sales performance, regional profitability, customer segmentation, product inventory and shipping efficiency. Built with calculated fields, filters and trend lines.",
-  link: "/Superstore_Analysis_Tableau.pdf",
-  tags: ["Tableau", "BI Dashboards", "Data Analysis", "Customer Segmentation", "Sales Forecasting"],
-  live: false,
-},
+    {
+      title: "AI in Military — National Conference Paper",
+      description:
+        "Research paper examining India\u2019s AI capabilities in defence — autonomous systems, robotics and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
+      link: "/AI_Military_Suryasri_Sundara_AICTA2020.pdf",
+      tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
+      live: false,
+      certLink: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
+    },
+    {
+      title: "SuperStore Sales Analysis — Tableau",
+      description:
+        "5 interactive Tableau dashboards analysing retail sales data for regional managers. Covers sales performance, regional profitability, customer segmentation, product inventory and shipping efficiency. Built with calculated fields, filters and trend lines.",
+      link: "/Superstore_Analysis_Tableau.pdf",
+      tags: ["Tableau", "BI Dashboards", "Data Analysis", "Customer Segmentation", "Sales Forecasting"],
+      live: false,
+      certLink: null,
+    },
   ];
 
   const certifications = [
@@ -113,8 +115,7 @@ export default function Home() {
   ];
 
   return (
-   <main>
-      {/* Header */}
+    <main>
       <header className="sticky top-0 z-10 bg-slate-900 border-b border-slate-800 shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#home" className="font-semibold text-lg text-white">
@@ -130,7 +131,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
       <section id="home" className="max-w-6xl mx-auto px-6 py-16 md:py-24">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
@@ -153,29 +153,16 @@ export default function Home() {
               <span className="font-semibold text-slate-900">Full right to work in Ireland.</span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#projects"
-                className="px-5 py-2.5 rounded-2xl shadow bg-slate-900 text-white text-sm hover:bg-slate-700 transition"
-              >
+              <a href="#projects" className="px-5 py-2.5 rounded-2xl shadow bg-slate-900 text-white text-sm hover:bg-slate-700 transition">
                 View Projects
               </a>
-              <a
-                href="/Surya_SriSundara_CV_Protfolio.pdf"
-                className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition"
-              >
+              <a href="/Surya_SriSundara_CV_Protfolio.pdf" className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition">
                 Download CV
               </a>
-              <a
-                href="https://linkedin.com/in/surya-sri-sundara-4ab45b331"
-                className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://linkedin.com/in/surya-sri-sundara-4ab45b331" className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
             </div>
-
-            {/* Status badge */}
             <div className="mt-6 inline-flex items-center gap-2 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-2">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
               <span className="text-sm text-emerald-700 font-medium">
@@ -184,7 +171,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right side stats panel */}
           <div className="bg-slate-900 rounded-3xl shadow-lg p-6 border border-slate-700 text-white">
             <p className="text-xs text-slate-400 uppercase tracking-widest mb-4">At a glance</p>
             <div className="grid grid-cols-2 gap-4">
@@ -202,17 +188,14 @@ export default function Home() {
               </div>
               <div className="bg-slate-800 rounded-2xl p-4">
                 <p className="text-2xl font-bold text-amber-400">IE</p>
-                <p className="text-xs text-slate-400 mt-1">Right to Work ✓</p>
+                <p className="text-xs text-slate-400 mt-1">Right to Work</p>
               </div>
             </div>
             <div className="mt-4 bg-slate-800 rounded-2xl p-4">
               <p className="text-xs text-slate-400 mb-2">Core Stack</p>
               <div className="flex flex-wrap gap-2">
                 {["Power BI", "Python", "SQL", "Flask", "Process Mapping"].map((t) => (
-                  <span
-                    key={t}
-                    className="text-[11px] px-2 py-1 rounded-full bg-slate-700 text-amber-300 border border-slate-600"
-                  >
+                  <span key={t} className="text-[11px] px-2 py-1 rounded-full bg-slate-700 text-amber-300 border border-slate-600">
                     {t}
                   </span>
                 ))}
@@ -222,61 +205,45 @@ export default function Home() {
         </div>
       </section>
 
-{/* Projects */}
       <section id="projects" className="bg-white border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">What I&apos;ve Built</h2>
           <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
-
-                key={p.title}
-                href={p.link}
-                className="block group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="rounded-2xl border border-slate-200 bg-white shadow-sm p-5 h-full hover:border-amber-400 hover:shadow-md transition">
-                  <div className="flex items-start justify-between mb-2">
-                    <h3 className="font-semibold group-hover:text-amber-600 text-slate-900 transition">
-                      {p.title}
-                    </h3>
-                    {p.live && (
-                      <span className="ml-2 shrink-0 text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200">
-                        Live
-                      </span>
-                    )}
-                  </div>
-                  <p className="text-sm text-slate-600 mt-2 leading-relaxed">{p.description}</p>
-                  <div className="flex flex-wrap gap-2 mt-4">
-                    {p.tags.map((t) => (
-                      <span
-                        key={t}
-                        className="text-[11px] px-2 py-1 rounded-full border border-slate-200 bg-slate-100 text-slate-700"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
+              <div key={p.title} className="rounded-2xl border border-slate-200 bg-white shadow-sm p-5 h-full hover:border-amber-400 hover:shadow-md transition flex flex-col">
+                <div className="flex items-start justify-between mb-2">
+                  <h3 className="font-semibold text-slate-900">{p.title}</h3>
+                  {p.live && (
+                    <span className="ml-2 shrink-0 text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 border border-emerald-200">
+                      Live
+                    </span>
+                  )}
+                </div>
+                <p className="text-sm text-slate-600 mt-2 leading-relaxed flex-1">{p.description}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {p.tags.map((t) => (
+                    <span key={t} className="text-[11px] px-2 py-1 rounded-full border border-slate-200 bg-slate-100 text-slate-700">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-2 mt-3 flex-wrap">
+                  <a href={p.link} target="_blank" rel="noopener noreferrer" className="inline-block text-[11px] px-3 py-1 rounded-full bg-slate-900 text-white hover:bg-slate-700 transition">
+                    View Project →
+                  </a>
                   {p.certLink && (
-
-                  herf={p.certLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={(e) => e.stopPropagation()}
-                      className="inline-block mt-3 text-[11px] px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-700 hover:bg-amber-100 transition"
-                    >
+                    <a href={p.certLink} target="_blank" rel="noopener noreferrer" className="inline-block text-[11px] px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-700 hover:bg-amber-100 transition">
                       View Certificate →
                     </a>
                   )}
                 </div>
-              </a>
+              </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Skills */}
       <section id="skills" className="border-t bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">Skills</h2>
@@ -285,19 +252,13 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             {skillGroups.map((group) => (
-              <div
-                key={group.category}
-                className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5"
-              >
+              <div key={group.category} className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
                 <p className="text-xs font-semibold text-amber-600 uppercase tracking-widest mb-3">
                   {group.category}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {group.skills.map((s) => (
-                    <span
-                      key={s}
-                      className="px-3 py-1.5 rounded-full border border-slate-200 bg-slate-50 text-sm text-slate-800"
-                    >
+                    <span key={s} className="px-3 py-1.5 rounded-full border border-slate-200 bg-slate-50 text-sm text-slate-800">
                       {s}
                     </span>
                   ))}
@@ -308,16 +269,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Certifications */}
       <section id="certifications" className="border-t bg-white">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">Certifications</h2>
           <ul className="mt-6 grid gap-4 md:grid-cols-2">
             {certifications.map((c) => (
-              <li
-                key={c.name}
-                className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm"
-              >
+              <li key={c.name} className="rounded-2xl border border-slate-200 bg-slate-50 p-5 shadow-sm">
                 <div className="flex items-center justify-between">
                   <div>
                     <h3 className="font-semibold text-slate-900">{c.name}</h3>
@@ -325,47 +282,31 @@ export default function Home() {
                       {c.issuer}
                       {c.instructor ? ` • Instructor: ${c.instructor}` : ""}
                     </p>
-                    <p className="text-xs text-slate-500">
-                      {c.month} {c.year}
-                    </p>
+                    <p className="text-xs text-slate-500">{c.month} {c.year}</p>
                   </div>
                   <div className="flex flex-col gap-1 items-end">
                     {c.badgeEarned && (
-                      <span className="text-xs rounded-full px-2 py-1 bg-emerald-600 text-white">
-                        Badge
-                      </span>
+                      <span className="text-xs rounded-full px-2 py-1 bg-emerald-600 text-white">Badge</span>
                     )}
                     {c.verified && (
-                      <span className="text-xs rounded-full px-2 py-1 bg-blue-600 text-white">
-                        Verified
-                      </span>
+                      <span className="text-xs rounded-full px-2 py-1 bg-blue-600 text-white">Verified</span>
                     )}
                     {c.status && (
-                      <span className="text-xs rounded-full px-2 py-1 bg-amber-500 text-white">
-                        {c.status}
-                      </span>
+                      <span className="text-xs rounded-full px-2 py-1 bg-amber-500 text-white">{c.status}</span>
                     )}
                   </div>
                 </div>
                 {c.skills?.length ? (
                   <div className="mt-3 flex flex-wrap gap-2">
                     {c.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="text-[11px] px-2 py-1 rounded-full border border-slate-200 bg-white text-slate-800"
-                      >
+                      <span key={skill} className="text-[11px] px-2 py-1 rounded-full border border-slate-200 bg-white text-slate-800">
                         {skill}
                       </span>
                     ))}
                   </div>
                 ) : null}
                 {c.link && (
-                  <a
-                    href={c.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 underline text-sm text-amber-600 hover:text-amber-800 transition"
-                  >
+                  <a href={c.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 underline text-sm text-amber-600 hover:text-amber-800 transition">
                     View Certificate →
                   </a>
                 )}
@@ -375,7 +316,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About */}
       <section id="about" className="bg-slate-900 border-t border-slate-700">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-white">About</h2>
@@ -391,8 +331,8 @@ export default function Home() {
             </p>
             <p>
               I&apos;m an active member of the{" "}
-              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>, 
-                 and I&apos;m open to junior BA, Data
+              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>, currently
+              completing QQI Level 5 in Medical Terminology, and I&apos;m open to junior BA, Data
               Analyst, and Business Intelligence roles across any sector.
             </p>
             <p className="text-amber-400 font-medium">
@@ -402,7 +342,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="contact" className="border-t bg-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">Contact</h2>
@@ -412,32 +351,19 @@ export default function Home() {
           <div className="space-y-3">
             <p className="text-slate-700">
               Email:{" "}
-              <a
-                className="underline text-amber-600 hover:text-amber-800 transition"
-                href="mailto:suryasrisundara549@gmail.com"
-              >
+              <a className="underline text-amber-600 hover:text-amber-800 transition" href="mailto:suryasrisundara549@gmail.com">
                 suryasrisundara549@gmail.com
               </a>
             </p>
             <p className="text-slate-700">
               LinkedIn:{" "}
-              <a
-                className="underline text-amber-600 hover:text-amber-800 transition"
-                href="https://linkedin.com/in/surya-sri-sundara-4ab45b331"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className="underline text-amber-600 hover:text-amber-800 transition" href="https://linkedin.com/in/surya-sri-sundara-4ab45b331" target="_blank" rel="noopener noreferrer">
                 linkedin.com/in/surya-sri-sundara-4ab45b331
               </a>
             </p>
             <p className="text-slate-700">
               GitHub:{" "}
-              <a
-                className="underline text-amber-600 hover:text-amber-800 transition"
-                href="https://github.com/SuryaSri549"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a className="underline text-amber-600 hover:text-amber-800 transition" href="https://github.com/SuryaSri549" target="_blank" rel="noopener noreferrer">
                 github.com/SuryaSri549
               </a>
             </p>
