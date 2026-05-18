@@ -17,14 +17,14 @@ export default function Home() {
   live: false,
   certLink: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
 },
-    {
-      title: "Power BI Sales Dashboard",
-      description:
-        "Interactive BI dashboard built on retail sales data. Covers regional performance, discount impact analysis, top product rankings and forecast overlays. Designed for non-technical decision makers.",
-      link: "https://github.com/SuryaSri549",
-      tags: ["Power BI", "DAX", "Data Modelling", "BI Reporting"],
-      live: false,
-    },
+{
+  title: "SuperStore Sales Analysis — Tableau",
+  description:
+    "5 interactive Tableau dashboards analysing retail sales data for regional managers. Covers sales performance, regional profitability, customer segmentation, product inventory and shipping efficiency. Built with calculated fields, filters and trend lines.",
+  link: "/Superstore_Analysis_Tableau.pdf",
+  tags: ["Tableau", "BI Dashboards", "Data Analysis", "Customer Segmentation", "Sales Forecasting"],
+  live: false,
+},
   ];
 
   const certifications = [
@@ -222,14 +222,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects */}
+{/* Projects */}
       <section id="projects" className="bg-white border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-slate-900">What I&apos;ve Built </h2>
+          <h2 className="text-3xl font-semibold text-slate-900">What I&apos;ve Built</h2>
           <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
-              <a
+              
                 key={p.title}
                 href={p.link}
                 className="block group"
@@ -258,6 +258,17 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
+                  {p.certLink && (
+                    
+                      href={p.certLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-block mt-3 text-[11px] px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-700 hover:bg-amber-100 transition"
+                    >
+                      View Certificate →
+                    </a>
+                  )}
                 </div>
               </a>
             ))}
