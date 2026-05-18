@@ -8,14 +8,15 @@ export default function Home() {
       tags: ["Flask", "Python", "ARIMA", "Prophet", "K-Means", "SQLite", "Power BI"],
       live: true,
     },
-    {
-      title: "AI in Military — National Conference Paper",
-      description:
-        "Research paper examining India\u2019s AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
-      link: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
-      tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
-      live: false,
-    },
+   {
+  title: "AI in Military — National Conference Paper",
+  description:
+    "Research paper examining India\u2019s AI capabilities in defence — autonomous systems, robotics and military strategy. Presented at AICTA 2020, DST-CURIE-AI sponsored national conference.",
+  link: "/AI_Military_Suryasri_Sundara_AICTA2020.pdf",
+  tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
+  live: false,
+  certLink: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
+},
     {
       title: "Power BI Sales Dashboard",
       description:
@@ -224,7 +225,7 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="bg-white border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-slate-900">Proof of Work</h2>
+          <h2 className="text-3xl font-semibold text-slate-900">What I&apos;ve Built </h2>
           <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
@@ -257,6 +258,17 @@ export default function Home() {
                       </span>
                     ))}
                   </div>
+                  {p.certLink && (
+                    
+                      href={p.certLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={(e) => e.stopPropagation()}
+                      className="inline-block mt-3 text-[11px] px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-700 hover:bg-amber-100 transition"
+                    >
+                      View Certificate →
+                    </a>
+                  )}
                 </div>
               </a>
             ))}
@@ -379,8 +391,8 @@ export default function Home() {
             </p>
             <p>
               I&apos;m an active member of the{" "}
-              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>, currently
-              completing QQI Level 5 in Medical Terminology, and I&apos;m open to junior BA, Data
+              <span className="text-amber-400 font-medium">IIBA Ireland Chapter</span>, 
+                 and I&apos;m open to junior BA, Data
               Analyst, and Business Intelligence roles across any sector.
             </p>
             <p className="text-amber-400 font-medium">
