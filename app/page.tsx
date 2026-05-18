@@ -8,14 +8,14 @@ export default function Home() {
       tags: ["Flask", "Python", "ARIMA", "Prophet", "K-Means", "SQLite", "Power BI"],
       live: true,
     },
-   {
-  title: "AI in Military — National Conference Paper",
-  description:
-    "Research paper examining India AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
-  link: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
-  tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
-  live: false,
-},
+    {
+      title: "AI in Military — National Conference Paper",
+      description:
+        "Research paper examining India\u2019s AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
+      link: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
+      tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
+      live: false,
+    },
     {
       title: "Power BI Sales Dashboard",
       description:
@@ -112,7 +112,7 @@ export default function Home() {
   ];
 
   return (
-    <main>
+   <main>
       {/* Header */}
       <header className="sticky top-0 z-10 bg-slate-900 border-b border-slate-800 shadow-md">
         <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -145,16 +145,11 @@ export default function Home() {
               </span>
             </h1>
             <p className="mt-6 text-slate-700 leading-relaxed">
-              I bridge the gap between{" "}
-              <span className="font-semibold text-slate-900">data and decisions</span>. I gather
-              requirements, map processes, and build end-to-end analytics tools — from{" "}
-              <span className="font-semibold text-amber-600">Power BI dashboards</span> to
-              forecasting apps — that help teams act on what the numbers are telling them.
-              Based in Dublin.{" "}
-              <span className="font-semibold text-slate-900">
-                Actively seeking junior BA and Data Analyst roles.
-              </span>{" "}
-              Full right to work in Ireland.
+              I turn business problems into data solutions. From requirements workshops to live{" "}
+              <span className="font-semibold text-amber-600">Power BI dashboards</span> — I bridge
+              the gap between what a business needs and what the data can tell it. Based in Dublin,
+              actively seeking junior BA and Data Analyst roles.{" "}
+              <span className="font-semibold text-slate-900">Full right to work in Ireland.</span>
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -229,7 +224,7 @@ export default function Home() {
       {/* Projects */}
       <section id="projects" className="bg-white border-t">
         <div className="max-w-6xl mx-auto px-6 py-16">
-          <h2 className="text-3xl font-semibold text-slate-900">What I've Built</h2>
+          <h2 className="text-3xl font-semibold text-slate-900">Proof of Work</h2>
           <p className="text-slate-500 mt-2 text-sm">Built from scratch. Documented end-to-end.</p>
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {projects.map((p) => (
@@ -400,7 +395,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 py-16">
           <h2 className="text-3xl font-semibold text-slate-900">Contact</h2>
           <p className="text-slate-500 mt-2 mb-6 text-sm">
-            Open to junior BA, Data Analyst, and BI Analyst roles - let&apos;s talk.
+            Open to junior BA, Data Analyst, and BI Analyst roles — let&apos;s talk.
           </p>
           <div className="space-y-3">
             <p className="text-slate-700">
