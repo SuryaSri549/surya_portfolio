@@ -11,7 +11,7 @@ export default function Home() {
    {
   title: "AI in Military — National Conference Paper",
   description:
-    "Research paper examining India's AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
+    "Research paper examining India AI capabilities in defence — covering autonomous systems, robotics, and military strategy. Presented at AICTA 2020, a DST-CURIE-AI sponsored national conference at Sri Padmavati Mahila Visvavidyalayam.",
   link: "/Certificate_of_Paper_Submission_on_Artificial_Intelligence.png",
   tags: ["Research", "AI", "Academic Writing", "Analysis", "AICTA 2020"],
   live: false,
