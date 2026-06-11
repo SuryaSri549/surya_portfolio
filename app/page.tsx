@@ -156,7 +156,7 @@ export default function Home() {
               <a href="#projects" className="px-5 py-2.5 rounded-2xl shadow bg-slate-900 text-white text-sm hover:bg-slate-700 transition">
                 View Projects
               </a>
-              <a href="/Surya_SriSundara_CV_Protfolio.pdf" className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition">
+              <a href="/Surya_SriSundara_STEM.pdf" className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition">
                 Download CV
               </a>
               <a href="https://linkedin.com/in/surya-sri-sundara-4ab45b331" className="px-5 py-2.5 rounded-2xl border border-slate-300 text-sm hover:border-amber-400 hover:text-amber-600 transition" target="_blank" rel="noopener noreferrer">
